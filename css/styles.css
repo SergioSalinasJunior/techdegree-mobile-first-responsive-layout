@@ -85,6 +85,10 @@ footer {
     padding: 15px;
 }
 
+footer nav {
+    display: none;
+}
+
 .nav-footer {
     display: flex;
     justify-content: space-between;
@@ -100,4 +104,104 @@ footer {
 .nav-footer p {
     font-weight: 700;
     color: #4a4a4a;
+}
+
+/*************
+MEDIA QUERIES
+*************/
+
+/*** TABLET STYLES ***/
+@media (min-width: 768px) {
+
+    body {
+        margin: 50px 15px;
+    }
+
+    article p {
+        padding: 0px 20px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    ul {
+        margin-top: 1.5rem;
+    }
+    nav li {
+        display: inline;
+        background-color: #fafafa;
+    }
+
+    .main-header {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+
+    }
+
+    .main-header img {
+        max-width: 40%;
+        margin: 15px;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section h1 {
+        display: block;
+        width: 100%;
+    }
+
+    article {
+        width: 50%;
+        padding: 5px;
+    }
+
+    #collapsed-menu {
+        display: none;
+    }
+
+    footer nav {
+        display: inline;
+    }
+
+    .main-header p, footer p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.7rem;
+    }
+
+    footer p {
+        padding: 0 3rem;
+    }
+
+    aside {
+        padding-bottom: 20px;
+    }
+}
+
+/*** DESKTOP STYLES ***/
+@media (min-width: 1024px) {
+
+    .main-header{
+        padding-bottom: 3rem;
+    }
+
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article {
+        width: 33.33%;
+    }
+
+    .main-header p, footer p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: auto 2rem;
+    }
 }
