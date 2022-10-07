@@ -16,9 +16,15 @@ body {
 a {
     text-decoration: none;
     color: #4a4a4a;
+    padding: 15px;
 }
-a:hover {
-    color: #6633ff;
+
+li:hover a{
+    color: #fafafa;
+}
+
+li:hover {
+    background-color: #4a4a4a;
 }
 
 /* Section Styles */
@@ -29,8 +35,8 @@ ul {
 nav li {
     list-style-type: none;
     background-color: #ffffff;
+    margin: 5px 0;
     padding: 15px;
-    margin: 5px 15px;
     font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -96,9 +102,9 @@ footer nav {
     border-top: #7f7f7f dotted 1px;
 }
 
-.nav-footer a {
-    text-transform: uppercase;
-    font-size: 0.8rem;
+#collapsed-menu:hover {
+    color: #fafafa;
+    background-color: #4a4a4a;
 }
 
 .nav-footer p {
@@ -186,6 +192,11 @@ MEDIA QUERIES
 /*** DESKTOP STYLES ***/
 @media (min-width: 1024px) {
 
+    body{
+        width: 95%;
+        margin: 3rem auto;
+    }
+
     .main-header{
         padding-bottom: 3rem;
     }
@@ -202,6 +213,6 @@ MEDIA QUERIES
     .main-header p, footer p {
         font-size: 1.5rem;
         line-height: 2rem;
-        padding: auto 2rem;
+        padding: 0 3rem 0 0;
     }
 }
